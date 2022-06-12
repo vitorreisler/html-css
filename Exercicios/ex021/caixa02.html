@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            background-color: dimgray;
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header {
+            background-color: #ffffff;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        header>h1{
+            text-align: center;
+        }
+
+        nav{
+            background-color: rgba(102, 102, 102);
+            box-shadow: 2px 1px 4px black;
+            /*Shorthand de box shadow (primeiro número vai definir a sombra nas laterais(eixo x), o segundo número vai definir em cima e em baixo (eixo y) o terceiro número é o blur (embassamento) e se tiver um quarto número é o spread (espalhamento da sombra).
+            Podemos usar o Devopstools do chrome pra fazer um esboço da sombra*/
+             
+        }
+        nav>a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+            margin-right: 30px;
+            
+        }
+        nav>a:hover{
+            text-decoration: underline;
+            
+        }
+
+        main{
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px 0px;
+            background-color: white;
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 384);
+        }
+
+        article{
+            background-color: lightgray;
+            border-radius: 10px;
+
+        }
+        article > h2{
+            text-align: center;
+        }
+        article > aside{
+            background-color: gray;
+            font-weight: 600;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+        footer{
+            background-color: black;
+            color: #ffffff;
+            text-align: center;
+            padding: 5px;
+            font-size: 0.7em;
+        }
+        footer>p{
+            margin:0px;
+        }
+
+       
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1> Meu site </h1>
+        <nav> <!--Nav = navigation, bom pra menus-->
+            <a href="@">link</a>
+            <a href="@">link</a>
+            <a href="@">link</a>
+            <a href="@">link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="Esportes">
+            <article>
+                <h2>Noticias sobre Esportes</h2>
+                    <p>&nbsp<!-- &nbsp Adiciona espaço no começo da tag p--> Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur est illum nam, voluptate expedita provident quo eos praesentium at nisi qui animi veniam quibusdam sint quae dignissimos possimus? Ipsum, quas.</p>
+                    <aside>
+                        <p>Peter Jordan</p>
+                    </aside>
+            </article>
+
+        </section>
+        <section id="Noticias">
+            <article>
+                <h2>Noticias sobre tecnologia</h2>
+                    <p>&nbsp Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad exercitationem officiis vitae aperiam nulla quam a voluptate praesentium repudiandae quisquam iste et veniam unde nesciunt illum, quaerat quia assumenda!</p>
+                <aside>
+                    <p> Peter Parker</p> 
+                </aside>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Coded By: Vitor G.Reisler</p>
+    </footer>
+</body>
+</html>

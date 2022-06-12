@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+body {
+    font-family:Arial, Helvetica, sans-serif ;
+    /* Medidas absolutas:cm, mm, in, px, pt, pc
+    */
+/* Medidas Relativas: em, ex, rem, vw, vh, % */
+
+/*Usar somente px ou em nas font-sizes.
+1 em = 16px */
+    font-size: 1.25em ; 
+    
+}
+h1 {
+    /*Shorthand font precisa ser nessa ordem
+    font-style -> font-weight-> font-size-> font-family->*/
+    font: italic bolder 3em 'work sans', sans-serif;
+}
+

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos de Caixas</title>
+    <style>
+        h1{
+            background-color: lightseagreen;
+
+            height: 300px;
+            width: 300px;
+            
+            
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray;
+            /*Shorthand: border: 10px solid darkslaregray;
+            SEMPRE NESSA ORDEM COMO ESTÁ EM CIMA (width - style - color) */
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            /*Shorthand: padding: 10px 10px 10px 10px;
+            se for sempre usar o mesmo padding em tudo do elemento (adiciona nos 4 lados): padding: 10px;
+            Se colocar só: padding: 10px 20px (irá aumentar 10 no top/bottom e 20 no righr/left)
+            SEMPRE NA DIREÇÃO: TOP - RIGHT - BOTTOM- LEFT*/
+
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;
+            /*Shorthand: margin: 20px 20px 40px 20px;
+            pra caixa ficar centralizada: margin: 20px auto 20px auto (o px é um número aleatório, o importante aqui é o auto/auto)
+            SEMPRE NA DIREÇÃO: TOP - RIGHT - BOTTOM- LEFT*/
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: green;
+            /* Shorthand: outline: 5px dashed green;
+            sempre na ordem como está ali em cima (width - style - color)*/
+        }
+
+        a{ /*Inline-lvl*/
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+            /*Shorthand: border: 10px solid red;*/
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            /*Shorthand: padding: 10px*/
+            
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Exemplo de caixa box-lvl</h1>
+    <p> Parágrafos também são exemplo de box-lvl, mas os <a href="@">Links são exemplos de de caixas inline-lvl. </a> Vamos ver como isso funciona</p>
+    
+</body>
+</html>

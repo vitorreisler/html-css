@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML </title>
+</head>
+
+<body>
+    <h1>Imagem Dinâmica</h1>
+        <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminua o seu navegador</p> <!--IMPORTANTE LEMBRAR QUE PARA FAZER A RESPONSIVIDADE DO MODO CORRETO E QUE FUNCIONA, VC SEMPRE VAI COLOCAR EM ORDEM CRESCENTE (do menor PRO MAIOR) -->
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/imagemp.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/imagemm.png" type="image/png">
+        <img src="imagens/imagemg.png" alt="Imagem Flexível">
+    </picture>
+    
+    <h1>Reproduzindo Áudios</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio src="midia/musicateste.mp3" 
+    controls autoplay></audio>
+    <!--OU-->
+    <audio preload="metadata" autoplay controls>
+        <source src="midia/musicateste.mp3" type="audio/mpeg">
+        <!--Caso tenha arquivos em outro formato de audio, é importante coloca-los na pasta e se certificar que escrevemos ele no código tbm-->
+        <source src="midia/musicateste.ogg" type="audio/ogg">
+        <!--NÃO UTILIZAR ARQUIVOS WAV, ELES SÃO MUITO PESADOS-->
+        <source src="midia/musicateste.wav" type="audio/wav">
+    </audio>
+
+</body>
+</html>
